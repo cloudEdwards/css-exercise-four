@@ -1,4 +1,54 @@
 body {
   background-color: #dadada;
-  font-size: 10px;
+  font-size: 18px;
+}
+
+.container {
+  width: 100%;
+  margin: auto 0;
+  text-align: center;
+}
+
+.container .preview {
+  display: inline-block;
+  width: 20%;
+  height: 200px;
+  margin: 5px auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container .preview.baku {
+  background-image: url('../images/baku.jpg');
+}
+.container .preview.london {
+  background-image: url('../images/london.png');
+}
+.container .preview.madrid {
+  background-image: url('../images/madrid.jpg');
+}
+.container .preview.rome {
+  background-image: url('../images/rome.jpg');
+}
+.container > h1 {
+  text-transform: uppercase;
+  font-size: 1.8em;
+  margin: 1em auto;
+}
+
+.container .preview h1 {
+  font-size: 1.5em;
+  padding: 5% 5%;
+  text-align: left;
+}
+
+@media screen and (max-width: 992px) {
+  .container .preview {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .container .preview {
+    display: block;
+    width: 100%;
+  }
 }
